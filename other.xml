@@ -1,0 +1,19 @@
+<application>
+  <component name="NodeJsLocalInterpreters">
+    <local-interpreter path="/usr/bin/node">
+      <version-cache version="8.9.1" last-modified="1510094592000" />
+      <npm-package value="/usr/lib/node_modules/npm" />
+    </local-interpreter>
+  </component>
+  <component name="OCRunConfigurationsSettings">
+    <option name="STOP_RUNNING_SESSION_AUTOMATICALLY" value="true" />
+  </component>
+  <component name="XcodeSettings">
+    <option name="selectedXcode" value="/Applications/Xcode.app/Contents/Developer" />
+    <option name="detectedXcodes">
+      <list>
+        <option value="/Applications/Xcode.app/Contents/Developer" />
+      </list>
+    </option>
+  </component>
+</application>

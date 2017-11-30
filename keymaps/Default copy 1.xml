@@ -1,0 +1,9 @@
+<keymap version="1" name="Default copy 1" parent="$default">
+  <action id="NewJavaScriptFile">
+    <keyboard-shortcut first-keystroke="shift ctrl x" />
+  </action>
+  <action id="ReformatCode">
+    <keyboard-shortcut first-keystroke="ctrl alt l" />
+    <keyboard-shortcut first-keystroke="ctrl alt dead_grave" />
+  </action>
+</keymap>
