@@ -3,10 +3,11 @@
     <property name="created">2017-12-07T10:22:29</property>
     <property name="ide">WebStorm</property>
     <property name="ideVersion">2017.3.1.0.0</property>
-    <property name="modified">2017-12-08T02:28:32</property>
+    <property name="modified">2017-12-11T08:46:23</property>
     <property name="originalScheme">Darcula</property>
   </metaInfo>
   <colors>
+    <option name="FILESTATUS_COPIED" value="629755" />
     <option name="FILESTATUS_HIJACKED" value="b28c00" />
     <option name="FILESTATUS_OBSOLETE" value="7c7c00" />
     <option name="FILESTATUS_SUPPRESSED" value="" />
