@@ -1,5 +1,13 @@
 <application>
   <component name="libraryTable">
+    <library name="@types/es6-promisify" type="javaScript">
+      <CLASSES />
+      <SOURCES />
+    </library>
+    <library name="@types/express" type="javaScript">
+      <CLASSES />
+      <SOURCES />
+    </library>
     <library name="jest-DefinitelyTyped" type="javaScript">
       <properties>
         <sourceFilesUrls>
