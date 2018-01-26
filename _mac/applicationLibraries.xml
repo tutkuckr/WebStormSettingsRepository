@@ -4,11 +4,23 @@
       <CLASSES />
       <SOURCES />
     </library>
+    <library name="@types/prop-types" type="javaScript">
+      <CLASSES />
+      <SOURCES />
+    </library>
     <library name="@types/react" type="javaScript">
       <CLASSES />
       <SOURCES />
     </library>
     <library name="@types/react-native" type="javaScript">
+      <CLASSES />
+      <SOURCES />
+    </library>
+    <library name="@types/react-native-linear-gradient" type="javaScript">
+      <CLASSES />
+      <SOURCES />
+    </library>
+    <library name="@types/redux-action" type="javaScript">
       <CLASSES />
       <SOURCES />
     </library>
