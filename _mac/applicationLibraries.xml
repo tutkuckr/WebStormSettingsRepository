@@ -24,5 +24,9 @@
       <CLASSES />
       <SOURCES />
     </library>
+    <library name="@types/styled-jsx" type="javaScript">
+      <CLASSES />
+      <SOURCES />
+    </library>
   </component>
 </application>
