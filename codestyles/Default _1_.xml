@@ -2,6 +2,7 @@
   <option name="AUTODETECT_INDENTS" value="false" />
   <JSCodeStyleSettings>
     <option name="USE_SEMICOLON_AFTER_STATEMENT" value="false" />
+    <option name="REFORMAT_C_STYLE_COMMENTS" value="true" />
     <option name="USE_DOUBLE_QUOTES" value="false" />
   </JSCodeStyleSettings>
   <MarkdownNavigatorCodeStyleSettings>
@@ -11,6 +12,8 @@
     <option name="XML_LEGACY_SETTINGS_IMPORTED" value="true" />
   </XML>
   <codeStyleSettings language="JavaScript">
+    <option name="TERNARY_OPERATION_SIGNS_ON_NEXT_LINE" value="true" />
+    <option name="WRAP_ON_TYPING" value="0" />
     <indentOptions>
       <option name="INDENT_SIZE" value="2" />
       <option name="CONTINUATION_INDENT_SIZE" value="2" />
