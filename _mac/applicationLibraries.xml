@@ -28,5 +28,9 @@
       <CLASSES />
       <SOURCES />
     </library>
+    <library name="@types/winston" type="javaScript">
+      <CLASSES />
+      <SOURCES />
+    </library>
   </component>
 </application>
