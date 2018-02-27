@@ -88,4 +88,11 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
+  <template name="cr" value="const $NAME$ = {&#10;  middleWare: Validator([]),&#10;  controller: &#10;}&#10;&#10;export default $NAME$;" description="create request" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
 </templateSet>
