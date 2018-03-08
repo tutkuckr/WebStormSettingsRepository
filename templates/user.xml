@@ -95,4 +95,11 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
+  <template name="import" value="import $NAME$ from '$NAME$';" description="import a dependency" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
+    </context>
+  </template>
 </templateSet>
