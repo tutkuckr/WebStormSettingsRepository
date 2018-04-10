@@ -102,4 +102,23 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
+  <template name="cat" value="it('$NAME$', async () =&gt; {&#10;  // Given&#10;&#10;  // When&#10;&#10;  // Then&#10;})" description="Create asynchronous jest test" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ct" value="it('$NAME$', () =&gt; {&#10;  // Given&#10;&#10;  // When&#10;&#10;  // Then&#10;})" description="Create jest test" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="cdbm" value="import DatabaseModel from './DatabaseModel'&#10;import type {$NAME$Model} from '../../database/models/$LOWERCASE_NAME$'&#10;&#10;class $NAME$ extends DatabaseModel implements $NAME$Model {&#10;    $END$&#10;}&#10;&#10;export default $NAME$;" description="Create a database model" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="User" alwaysStopAt="true" />
+    <variable name="LOWERCASE_NAME" expression="" defaultValue="snakeCase($NAME$)" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
