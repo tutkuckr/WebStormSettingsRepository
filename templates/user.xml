@@ -121,4 +121,10 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="cmc" value="const make$NAME$Call = async (requestBody) =&gt; {&#10;  const res = MockResponse.withStatusAndJson();&#10;  await resendEmailVerification.controller(MockRequest.for$NAME$(requestBody), res)&#10;  return res;&#10;}" description="Create make request call" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
