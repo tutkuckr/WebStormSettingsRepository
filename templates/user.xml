@@ -62,9 +62,8 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="af" value="const $VARIABLE$ = ($ARG$) =&gt; {&#10;  return &#10;}&#10;  " description="arrow function" toReformat="false" toShortenFQNames="true">
-    <variable name="VARIABLE" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="ARG" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="afc" value="const $NAME$ = () =&gt; {&#10;  $END$&#10;}" description="constant arrow function" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
@@ -75,8 +74,7 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="aaf" value="($PROPS$) =&gt; " description="Anonymous arrow function" toReformat="false" toShortenFQNames="true">
-    <variable name="PROPS" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="afa" value="() =&gt; {&#10;  $END$&#10;}" description="Anonymous arrow function" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
@@ -130,6 +128,12 @@
   <template name="scm" value="const $CONST$ = {&#10;  up: (queryInterface, Sequelize) =&gt; queryInterface.createTable('$TABLE_NAME$', {&#10;    id: {&#10;      allowNull: false,&#10;      autoIncrement: true,&#10;      primaryKey: true,&#10;      type: Sequelize.INTEGER,&#10;    },&#10;  }),&#10;  down: (queryInterface) =&gt; {&#10;    queryInterface.dropTable('$TABLE_NAME$')&#10;  },&#10;}&#10;&#10;export default $CONST$" shortcut="SPACE" description="Create sequelize migration" toReformat="true" toShortenFQNames="true">
     <variable name="CONST" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="TABLE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="afs" value="const $NAME$ = () =&gt; &#10;  $END$" description="single line arrow function" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
