@@ -127,4 +127,11 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="scm" value="const $CONST$ = {&#10;  up: (queryInterface, Sequelize) =&gt; queryInterface.createTable('$TABLE_NAME$', {&#10;    id: {&#10;      allowNull: false,&#10;      autoIncrement: true,&#10;      primaryKey: true,&#10;      type: Sequelize.INTEGER,&#10;    },&#10;  }),&#10;  down: (queryInterface) =&gt; {&#10;    queryInterface.dropTable('$TABLE_NAME$')&#10;  },&#10;}&#10;&#10;export default $CONST$" shortcut="SPACE" description="Create sequelize migration" toReformat="true" toShortenFQNames="true">
+    <variable name="CONST" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TABLE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
