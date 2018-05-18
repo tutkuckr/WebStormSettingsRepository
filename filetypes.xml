@@ -3,8 +3,9 @@
     <extensionMap>
       <mapping pattern=".sequelizerc" type="JSON" />
       <mapping pattern=".env.development" type="PLAIN_TEXT" />
-      <mapping pattern=".env.test" type="PLAIN_TEXT" />
+      <mapping pattern=".watchmanconfig" type="PLAIN_TEXT" />
       <mapping pattern=".env.example" type="PLAIN_TEXT" />
+      <mapping pattern=".env.test" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
 </application>
