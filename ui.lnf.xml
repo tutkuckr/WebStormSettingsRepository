@@ -1,8 +1,7 @@
 <application>
   <component name="UISettings">
-    <option name="FONT_SCALE" value="1.0" />
-    <option name="FONT_SIZE" value="10" />
-    <option name="HIDE_TOOL_STRIPES" value="false" />
+    <option name="FONT_SCALE" value="2.0" />
+    <option name="FONT_SIZE" value="20" />
     <option name="MAX_LOOKUP_WIDTH2" value="747" />
     <option name="SHOW_MEMORY_INDICATOR" value="true" />
     <option name="SHOW_STATUS_BAR" value="false" />
