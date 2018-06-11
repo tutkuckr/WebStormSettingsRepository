@@ -144,4 +144,10 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
+  <template name="rsc" value="import React from 'react';&#10;import PropTypes from 'prop-types';&#10;&#10;const $NAME$ = ({}) =&gt; (&#10;  $END$&#10;);&#10;&#10;$NAME$.propTypes = {&#10;&#10;};&#10;&#10;export default $NAME$;" description="react static component" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
