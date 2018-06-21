@@ -152,6 +152,19 @@
   </template>
   <template name="if" value="import $PACKAGE$ from '$PACKAGE$'&#10;" description="Import from" toReformat="false" toShortenFQNames="true">
     <variable name="PACKAGE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
   </template>
-  <template name="ipt" value="import PropTypes from 'prop-types'&#10;" description="import prop types" toReformat="false" toShortenFQNames="true" />
+  <template name="ipt" value="import PropTypes from 'prop-types'&#10;" description="import prop types" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ifsf" value="import $PACKAGE$ from './$PACKAGE$'&#10;" description="Import from same folder" toReformat="false" toShortenFQNames="true">
+    <variable name="PACKAGE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
