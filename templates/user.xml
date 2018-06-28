@@ -70,7 +70,7 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="rdcon" value="import {connect} from 'react-redux';&#10;import $COMPONENT$ from './ui/$COMPONENT$';&#10;&#10;const mapStateToProps = state =&gt; ({&#10;});&#10;&#10;const mapDispatchToProps = ({&#10;});&#10;&#10;export default connect(mapStateToProps, mapDispatchToProps)($COMPONENT$);&#10;" description="Create a reduc container" toReformat="false" toShortenFQNames="true">
+  <template name="rdcon" value="import {connect} from 'react-redux'&#10;import $COMPONENT$ from './ui/$COMPONENT$'&#10;&#10;const mapStateToProps = state =&gt; ({&#10;});&#10;&#10;const mapDispatchToProps = ({&#10;})&#10;&#10;export default connect(mapStateToProps, mapDispatchToProps)($COMPONENT$)&#10;&#10;" description="Create a reduc container" toReformat="false" toShortenFQNames="true">
     <variable name="COMPONENT" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
