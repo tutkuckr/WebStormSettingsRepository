@@ -176,4 +176,10 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="rdat" value="export const $ACTION$_REQUEST = '$ACTION$_REQUEST'&#10;export const $ACTION$_SUCCESS = '$ACTION$_SUCCESS'&#10;export const $ACTION$_FAILED = '$ACTION$_FAILED'" description="create redux action types" toReformat="false" toShortenFQNames="true">
+    <variable name="ACTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
