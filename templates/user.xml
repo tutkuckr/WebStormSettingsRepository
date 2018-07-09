@@ -11,19 +11,19 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="gp" value="const {$PROP$} = this.props;" description="Get prop from props" toReformat="false" toShortenFQNames="true">
+  <template name="gp" value="const {$PROP$} = this.props" description="Get prop from props" toReformat="false" toShortenFQNames="true">
     <variable name="PROP" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="gs" value="const {$VAR$} = this.state;" description="Get props from state" toReformat="false" toShortenFQNames="true">
+  <template name="gs" value="const {$VAR$} = this.state" description="Get props from state" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="ss" value="this.setState({&#10;  $VAR$: $VALUE$&#10;});" description="set state" toReformat="false" toShortenFQNames="true">
+  <template name="ss" value="this.setState({&#10;  $VAR$: $VALUE$&#10;})" description="set state" toReformat="false" toShortenFQNames="true">
     <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
@@ -50,14 +50,15 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="rdaact" value="export const $ACTION$_REQUEST = '$ACTION$_REQUEST';&#10;export const $ACTION$_SUCCESS = '$ACTION$_SUCCESS';&#10;export const $ACTION$_FAILED = '$ACTION$_FAILED';&#10;&#10;const $ACTION_NAME$Request = () =&gt; ({&#10;  type: $ACTION$_REQUEST&#10;})&#10;&#10;const $ACTION_NAME$Success = (data) =&gt; ({&#10;  type: $ACTION$_SUCCESS,&#10;  data&#10;})&#10;&#10;const $ACTION_NAME$Failed = (error) =&gt; ({&#10;  type: $ACTION$_FAILED,&#10;  error: error.toString()&#10;})&#10;&#10;export const $ACTION_NAME$ = () =&gt; (dispatch, getState) =&gt; {&#10;  dispatch($ACTION_NAME$Request())&#10;  return apiCall(getState().user.token)&#10;    .then(response =&gt; dispatch($ACTION_NAME$Success(response)))&#10;    .catch(error =&gt; dispatch($ACTION_NAME$Failed(error)))&#10;}" description="Create Asynchronous Redux action with action creator" toReformat="false" toShortenFQNames="true">
+  <template name="rdaact" value="import {$ACTION$_REQUEST, $ACTION$_SUCCESS, $ACTION$_FAILED} from '../../ActionTypes'&#10;&#10;const $ACTION_NAME$Request = () =&gt; ({&#10;  type: $ACTION$_REQUEST&#10;})&#10;&#10;const $ACTION_NAME$Success = (items) =&gt; ({&#10;  type: $ACTION$_SUCCESS,&#10;  payload: {items: items.$NAME$}&#10;})&#10;&#10;const $ACTION_NAME$Failed = (error) =&gt; ({&#10;  type: $ACTION$_FAILED,&#10;  payload: error&#10;})&#10;&#10;export const $ACTION_NAME$ = () =&gt; (dispatch, getState) =&gt; {&#10;  dispatch($ACTION_NAME$Request())&#10;  return apiCall(getState().user.token)&#10;    .then(response =&gt; dispatch($ACTION_NAME$Success(response)))&#10;    .catch(error =&gt; dispatch($ACTION_NAME$Failed(error)))&#10;}" description="Create Asynchronous Redux action with action creator" toReformat="false" toShortenFQNames="true">
     <variable name="ACTION" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="ACTION_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="ed" value="export default $VARIABLE$;" description="export default" toReformat="false" toShortenFQNames="true">
+  <template name="ed" value="export default $VARIABLE$&#10;" description="export default" toReformat="false" toShortenFQNames="true">
     <variable name="VARIABLE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
@@ -69,7 +70,7 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="rdcon" value="import {connect} from 'react-redux';&#10;import $COMPONENT$ from './ui/$COMPONENT$';&#10;&#10;const mapStateToProps = state =&gt; ({&#10;});&#10;&#10;const mapDispatchToProps = ({&#10;});&#10;&#10;export default connect(mapStateToProps, mapDispatchToProps)($COMPONENT$);&#10;" description="Create a reduc container" toReformat="false" toShortenFQNames="true">
+  <template name="rdcon" value="import {connect} from 'react-redux'&#10;import $COMPONENT$ from './ui/$COMPONENT$'&#10;&#10;const mapStateToProps = state =&gt; ({&#10;});&#10;&#10;const mapDispatchToProps = ({&#10;})&#10;&#10;export default connect(mapStateToProps, mapDispatchToProps)($COMPONENT$)&#10;&#10;" description="Create a reduc container" toReformat="false" toShortenFQNames="true">
     <variable name="COMPONENT" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
@@ -80,7 +81,7 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="cl" value="console.log($PARAM$);" description="console log" toReformat="false" toShortenFQNames="true">
+  <template name="cl" value="console.log($PARAM$)" description="console log" toReformat="false" toShortenFQNames="true">
     <variable name="PARAM" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
@@ -120,7 +121,7 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="cmc" value="const make$NAME$Call = async (requestBody) =&gt; {&#10;  const res = MockResponse.withStatusAndJson();&#10;  await resendEmailVerification.controller(MockRequest.for$NAME$(requestBody), res)&#10;  return res;&#10;}" description="Create make request call" toReformat="false" toShortenFQNames="true">
+  <template name="cmc" value="const make$NAME$Call = async (requestBody) =&gt; {&#10;  const res = MockResponse.withStatusAndJson()&#10;  await resendEmailVerification.controller(MockRequest.for$NAME$(requestBody), res)&#10;  return res&#10;}" description="Create make request call" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
@@ -139,10 +140,11 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="rc" value="import React from 'react'&#10;&#10;const $NAME$ = () =&gt; (&#10;  $END$&#10;);&#10;&#10;export default $NAME$;" description="" toReformat="false" toShortenFQNames="true">
+  <template name="rc" value="import React from 'react'&#10;&#10;const $NAME$ = () =&gt; (&#10;  $END$&#10;)&#10;&#10;export default $NAME$" description="Create react component" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
   <template name="rwsc" value="import React from 'react';&#10;import PropTypes from 'prop-types';&#10;&#10;const $NAME$ = ({}) =&gt; (&#10;  &lt;div/&gt;$END$&#10;);&#10;&#10;$NAME$.propTypes = {&#10;  children: PropTypes.any&#10;};&#10;&#10;export default $NAME$;&#10;" description="react static component" toReformat="false" toShortenFQNames="true">
@@ -164,6 +166,19 @@
   </template>
   <template name="ifsf" value="import $PACKAGE$ from './$PACKAGE$'&#10;" description="Import from same folder" toReformat="false" toShortenFQNames="true">
     <variable name="PACKAGE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="cf" value="const $NAME$ = ($VAR$) =&gt; {&#10;  $END$&#10;}&#10;&#10;export default $NAME$&#10;" description="create a default exported function" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rdat" value="export const $ACTION$_REQUEST = '$ACTION$_REQUEST'&#10;export const $ACTION$_SUCCESS = '$ACTION$_SUCCESS'&#10;export const $ACTION$_FAILED = '$ACTION$_FAILED'" description="create redux action types" toReformat="false" toShortenFQNames="true">
+    <variable name="ACTION" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>

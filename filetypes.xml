@@ -7,8 +7,8 @@
       <mapping pattern=".env.test" type="PLAIN_TEXT" />
       <mapping pattern=".env.example" type="PLAIN_TEXT" />
       <mapping pattern=".watchmanconfig" type="PLAIN_TEXT" />
-      <mapping ext="example" type="PLAIN_TEXT" />
       <mapping ext="php" type="PLAIN_TEXT" />
+      <mapping ext="example" type="PLAIN_TEXT" />
       <mapping ext="mijnik" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
