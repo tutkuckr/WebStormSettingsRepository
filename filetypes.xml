@@ -1,12 +1,14 @@
 <application>
   <component name="FileTypeManager" version="17">
     <extensionMap>
-      <mapping pattern=".sequelizerc" type="JSON" />
+      <mapping pattern="LeafletWMTSLayer" type="JavaScript" />
+      <mapping pattern=".sequelizerc" type="JavaScript" />
       <mapping pattern="duplicateFileFix" type="PLAIN_TEXT" />
       <mapping pattern=".env.development" type="PLAIN_TEXT" />
       <mapping pattern=".env.test" type="PLAIN_TEXT" />
       <mapping pattern=".env.example" type="PLAIN_TEXT" />
       <mapping pattern=".watchmanconfig" type="PLAIN_TEXT" />
+      <mapping ext="rc" type="PLAIN_TEXT" />
       <mapping ext="php" type="PLAIN_TEXT" />
       <mapping ext="example" type="PLAIN_TEXT" />
       <mapping ext="mijnik" type="PLAIN_TEXT" />
