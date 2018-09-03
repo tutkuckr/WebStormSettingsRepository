@@ -192,4 +192,10 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="afcc" value="const $NAME$ = () =&gt; {&#10;  $END$&#10;}" description="constant arrow function" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="fileNameWithoutExtension()" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
