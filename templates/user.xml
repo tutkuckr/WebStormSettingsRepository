@@ -184,4 +184,12 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="rpt" value="$END$import PropTypes from 'prop-types'&#10;$COMPONENT$.propTypes = {&#10;  $OBJECT$: PropTypes.$TYPE$,&#10;}" description="Create react prop types" toReformat="false" toShortenFQNames="true">
+    <variable name="COMPONENT" expression="" defaultValue="fileNameWithoutExtension()" alwaysStopAt="true" />
+    <variable name="OBJECT" expression="" defaultValue="children" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="any" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
