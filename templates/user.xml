@@ -192,4 +192,10 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="jtd" value="describe('$TEST_NAME$', () =&gt; {&#10;  $END$&#10;})" description="Create jest test describe block" toReformat="false" toShortenFQNames="true">
+    <variable name="TEST_NAME" expression="" defaultValue="capitalize(spaceSeparated(fileNameWithoutExtension()))" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
