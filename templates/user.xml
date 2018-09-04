@@ -198,4 +198,11 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="edc" value="const $CONST_NAME$ = ($ARGS$) =&gt; {&#10;  $END$&#10;}&#10;&#10;export default $CONST_NAME$&#10;" description="export default constant" toReformat="false" toShortenFQNames="true">
+    <variable name="CONST_NAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARGS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
