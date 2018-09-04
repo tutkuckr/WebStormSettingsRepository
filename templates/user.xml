@@ -192,15 +192,8 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="afcc" value="const $NAME$ = () =&gt; {&#10;  $END$&#10;}" description="constant arrow function" toReformat="false" toShortenFQNames="true">
-    <variable name="NAME" expression="" defaultValue="fileNameWithoutExtension()" alwaysStopAt="true" />
-    <context>
-      <option name="JAVA_SCRIPT" value="true" />
-    </context>
-  </template>
-  <template name="edc" value="const $CONST_NAME$ = ($PROPS$) =&gt; {&#10;  $END$&#10;}&#10;&#10;export default $CONST_NAME$&#10;" description="export default constant" toReformat="false" toShortenFQNames="true">
-    <variable name="CONST_NAME" expression="" defaultValue="fileNameWithoutExtension()" alwaysStopAt="true" />
-    <variable name="PROPS" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="jtd" value="describe('$TEST_NAME$', () =&gt; {&#10;  $END$&#10;})" description="Create jest test describe block" toReformat="false" toShortenFQNames="true">
+    <variable name="TEST_NAME" expression="" defaultValue="capitalize(spaceSeparated(fileNameWithoutExtension()))" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
