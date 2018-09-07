@@ -184,4 +184,25 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="rpt" value="$END$import PropTypes from 'prop-types'&#10;$COMPONENT$.propTypes = {&#10;  $OBJECT$: PropTypes.$TYPE$,&#10;}" description="Create react prop types" toReformat="false" toShortenFQNames="true">
+    <variable name="COMPONENT" expression="" defaultValue="fileNameWithoutExtension()" alwaysStopAt="true" />
+    <variable name="OBJECT" expression="" defaultValue="children" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="any" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="jtd" value="describe('$TEST_NAME$', () =&gt; {&#10;  $END$&#10;})" description="Create jest test describe block" toReformat="false" toShortenFQNames="true">
+    <variable name="TEST_NAME" expression="" defaultValue="capitalize(spaceSeparated(fileNameWithoutExtension()))" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="edc" value="const $CONST_NAME$ = ($ARGS$) =&gt; {&#10;  $END$&#10;}&#10;&#10;export default $CONST_NAME$&#10;" description="export default constant" toReformat="false" toShortenFQNames="true">
+    <variable name="CONST_NAME" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <variable name="ARGS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
