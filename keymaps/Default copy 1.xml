@@ -14,7 +14,7 @@
   <action id="IntroduceActionsGroup">
     <keyboard-shortcut first-keystroke="shift alt e" />
   </action>
-  <action id="NewJavaScriptFile">
+  <action id="NewFile">
     <keyboard-shortcut first-keystroke="shift ctrl x" />
   </action>
   <action id="ReformatCode">
