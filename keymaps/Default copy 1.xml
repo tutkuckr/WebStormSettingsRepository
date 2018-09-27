@@ -11,6 +11,9 @@
     <keyboard-shortcut first-keystroke="shift ctrl l" />
     <keyboard-shortcut first-keystroke="ctrl alt w" />
   </action>
+  <action id="IntroduceActionsGroup">
+    <keyboard-shortcut first-keystroke="shift alt e" />
+  </action>
   <action id="NewJavaScriptFile">
     <keyboard-shortcut first-keystroke="shift ctrl x" />
   </action>
