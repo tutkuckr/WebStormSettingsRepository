@@ -5,6 +5,7 @@
       <mapping pattern=".sequelizerc" type="JavaScript" />
       <mapping pattern="duplicateFileFix" type="PLAIN_TEXT" />
       <mapping pattern=".env.development" type="PLAIN_TEXT" />
+      <mapping pattern="state" type="PLAIN_TEXT" />
       <mapping pattern=".env.test" type="PLAIN_TEXT" />
       <mapping pattern="flatMap" type="PLAIN_TEXT" />
       <mapping pattern=".env.example" type="PLAIN_TEXT" />
