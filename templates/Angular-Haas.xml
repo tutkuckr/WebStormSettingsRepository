@@ -1,9 +1,13 @@
 <templateSet group="Angular-Haas">
-  <template name="rdaa" value="export const $action$ = '[$module$] $action_name$';&#10;export const $action$_FAIL = '[$module$] $action_name$ fail';&#10;export const $action$_SUCCESS = '[$module$] $action_name$ success';&#10;&#10;export class $action_creator$ implements Action {&#10;  readonly type = $action$;&#10;}&#10;&#10;export class $action_creator$Fail implements Action {&#10;  readonly type = $action$;&#10;  constructor(public payload: any) {}&#10;}&#10;&#10;export class $action_creator$Success implements Action {&#10;  readonly type = $action$;&#10;  constructor(public payload: any) {}&#10;}&#10;&#10;export type $action_creator$Action = $action_creator$ | $action_creator$Fail | $action_creator$Success;&#10;" description="" toReformat="false" toShortenFQNames="true">
+  <template name="rdaa" value="import {Action} from '@ngrx/store';&#10;&#10;export const $action$ = '$action$';&#10;export const $action$_FAIL = '$action$_FAIL';&#10;export const $action$_SUCCESS = '$action$_SUCCESS';&#10;&#10;export class $action_creator$ implements Action {&#10;  readonly type = $action$;&#10;}&#10;&#10;export class $action_creator$Fail implements Action {&#10;  readonly type = $action$;&#10;  constructor(public payload: any) {}&#10;}&#10;&#10;export class $action_creator$Success implements Action {&#10;  readonly type = $action$;&#10;  constructor(public payload: any) {}&#10;}&#10;&#10;export type $action_creator$Action = $action_creator$ | $action_creator$Fail | $action_creator$Success;&#10;" description="" toReformat="false" toShortenFQNames="true">
     <variable name="action" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="module" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="action_name" expression="" defaultValue="capitalize(spaceSeparated(lowercaseAndDash(action)))" alwaysStopAt="true" />
     <variable name="action_creator" expression="" defaultValue="capitalize(camelCase(action))" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="rdr" value="export interface $REDUCER$State {&#10;  data: $REDUCER$ | null;&#10;  isLoading: boolean;&#10;  error?: string;&#10;}&#10;&#10;export const initialState: $REDUCER$State = {&#10;  data: null,&#10;  isLoading: false,&#10;  error: undefined&#10;};&#10;&#10;export function $REDUCER$Reducer(state = initialState, action: $REDUCER$Action): $REDUCER$State {&#10;  switch (action.type) {&#10;    case LOAD_SESSION:&#10;      return {&#10;        ...state,&#10;        isLoading: true&#10;      };&#10;    case LOAD_SESSION_SUCCESS:&#10;        return {&#10;        ...state,&#10;        isLoading: false,&#10;        data: action.payload&#10;      };&#10;    case LOAD_SESSION_FAIL:&#10;      return {&#10;        ...state,&#10;        isLoading: false,&#10;        error: action.payload&#10;      };&#10;  }&#10;  return state;&#10;}&#10;" description="redux reducer" toReformat="false" toShortenFQNames="true">
+    <variable name="REDUCER" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
