@@ -26,4 +26,11 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="rdsel" value="import {createFeatureSelector, createSelector} from '@ngrx/store';&#10;import {$REDUCER$State} from '../reducers';&#10;&#10;export const get$REDUCER$State = createFeatureSelector&lt;$REDUCER$State&gt;(&#10;  '$REDUCER_LOWER_CASE$'&#10;);&#10;&#10;export const get$REDUCER$IsLoaded = createSelector(&#10;  get$REDUCER$State,&#10;  (state: $REDUCER$State) =&gt; state.isLoaded&#10;);&#10;" description="redux feature selector" toReformat="false" toShortenFQNames="true">
+    <variable name="REDUCER" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="REDUCER_LOWER_CASE" expression="" defaultValue="decapitalize(REDUCER)" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
