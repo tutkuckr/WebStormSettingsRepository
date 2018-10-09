@@ -1,9 +1,15 @@
 <templateSet group="Angular-Haas">
-  <template name="rdaa" value="export const $action$ = '[$module$] $action_name$';&#10;export const $action$_FAIL = '[$module$] $action_name$ fail';&#10;export const $action$_SUCCESS = '[$module$] $action_name$ success';&#10;&#10;export class $action_creator$ implements Action {&#10;  readonly type = $action$;&#10;}&#10;&#10;export class $action_creator$Fail implements Action {&#10;  readonly type = $action$;&#10;  constructor(public payload: any) {}&#10;}&#10;&#10;export class $action_creator$Success implements Action {&#10;  readonly type = $action$;&#10;  constructor(public payload: any) {}&#10;}&#10;&#10;export type $action_creator$Action = $action_creator$ | $action_creator$Fail | $action_creator$Success;&#10;" description="" toReformat="false" toShortenFQNames="true" deactivated="true">
+  <template name="rdaa" value="export const $action$ = '[$module$] $action_name$';&#10;export const $action$_FAIL = '[$module$] $action_name$ fail';&#10;export const $action$_SUCCESS = '[$module$] $action_name$ success';&#10;&#10;export class $action_creator$ implements Action {&#10;  readonly type = $action$;&#10;}&#10;&#10;export class $action_creator$Fail implements Action {&#10;  readonly type = $action$;&#10;  constructor(public payload: any) {}&#10;}&#10;&#10;export class $action_creator$Success implements Action {&#10;  readonly type = $action$;&#10;  constructor(public payload: any) {}&#10;}&#10;&#10;export type $action_creator$Action = $action_creator$ | $action_creator$Fail | $action_creator$Success;&#10;" description="" toReformat="false" toShortenFQNames="true">
     <variable name="action" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="module" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="action_name" expression="" defaultValue="capitalize(spaceSeparated(lowercaseAndDash(action)))" alwaysStopAt="true" />
     <variable name="action_creator" expression="" defaultValue="capitalize(camelCase(action))" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ebf" value="export * from './$FILE$';" toReformat="false" toShortenFQNames="true">
+    <variable name="FILE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
