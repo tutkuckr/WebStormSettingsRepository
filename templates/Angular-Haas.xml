@@ -8,7 +8,7 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="ebf" value="export * from './$FILE$';" toReformat="false" toShortenFQNames="true">
+  <template name="ebf" value="export * from './$FILE$';" description="" toReformat="false" toShortenFQNames="true">
     <variable name="FILE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
