@@ -1,53 +1,15 @@
 <templateSet group="Angular-Haas">
-  <template name="rdaa" value="import {Action} from '@ngrx/store';&#10;&#10;export const $action$ = '$action$';&#10;export const $action$_FAIL = '$action$_FAIL';&#10;export const $action$_SUCCESS = '$action$_SUCCESS';&#10;&#10;export class $action_creator$ implements Action {&#10;  readonly type = $action$;&#10;}&#10;&#10;export class $action_creator$Fail implements Action {&#10;  readonly type = $action$_FAIL;&#10;  constructor(public payload: any) {}&#10;}&#10;&#10;export class $action_creator$Success implements Action {&#10;  readonly type = $action$_SUCCESS;&#10;  constructor(public payload: any) {}&#10;}&#10;&#10;export type $action_creator$Action = $action_creator$ | $action_creator$Fail | $action_creator$Success;&#10;" description="" toReformat="false" toShortenFQNames="true">
+  <template name="rdaa" value="export const $action$ = '[$module$] $action_name$';&#10;export const $action$_FAIL = '[$module$] $action_name$ fail';&#10;export const $action$_SUCCESS = '[$module$] $action_name$ success';&#10;&#10;export class $action_creator$ implements Action {&#10;  readonly type = $action$;&#10;}&#10;&#10;export class $action_creator$Fail implements Action {&#10;  readonly type = $action$;&#10;  constructor(public payload: any) {}&#10;}&#10;&#10;export class $action_creator$Success implements Action {&#10;  readonly type = $action$;&#10;  constructor(public payload: any) {}&#10;}&#10;&#10;export type $action_creator$Action = $action_creator$ | $action_creator$Fail | $action_creator$Success;&#10;" description="" toReformat="false" toShortenFQNames="true">
     <variable name="action" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="module" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="action_name" expression="" defaultValue="capitalize(spaceSeparated(lowercaseAndDash(action)))" alwaysStopAt="true" />
     <variable name="action_creator" expression="" defaultValue="capitalize(camelCase(action))" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="rdr" value="import * as fromActions from '../actions';&#10;&#10;export interface $REDUCER$State {&#10;  data: $REDUCER$ | null;&#10;  isLoading: boolean;&#10;  isLoaded: boolean;&#10;  error?: string;&#10;}&#10;&#10;export const initialState: $REDUCER$State = {&#10;  data: null,&#10;  isLoading: false,&#10;  isLoaded: false,&#10;  error: undefined&#10;};&#10;&#10;export function $REDUCER_EXPORT$Reducer(state = initialState, action: fromActions.Load$REDUCER$Action): $REDUCER$State {&#10;  switch (action.type) {&#10;    case fromActions.$ACTION$:&#10;      return {&#10;        ...state,&#10;        isLoading: true,&#10;        isLoaded: false&#10;      };&#10;    case fromActions.$ACTION$_SUCCESS:&#10;        return {&#10;        ...state,&#10;        isLoading: false,&#10;        data: action.payload,&#10;        isLoaded: true&#10;      };&#10;    case fromActions.$ACTION$_FAIL:&#10;      return {&#10;        ...state,&#10;        isLoading: false,&#10;        error: action.payload,&#10;        isLoaded: true&#10;      };&#10;  }&#10;  return state;&#10;}&#10;" description="redux reducer" toReformat="false" toShortenFQNames="true">
-    <variable name="REDUCER" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="REDUCER_EXPORT" expression="" defaultValue="decapitalize(REDUCER)" alwaysStopAt="true" />
-    <variable name="ACTION" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="JAVA_SCRIPT" value="true" />
-    </context>
-  </template>
-  <template name="ms" value="$NAME$: string;&#10;" description="" toReformat="false" toShortenFQNames="true">
-    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="JAVA_SCRIPT" value="true" />
-    </context>
-  </template>
-  <template name="ei" value="export interface $INTERFACE$ {&#10;  $END$&#10;}" description="" toReformat="false" toShortenFQNames="true">
-    <variable name="INTERFACE" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="JAVA_SCRIPT" value="true" />
-    </context>
-  </template>
-  <template name="rdsel" value="import {createFeatureSelector, createSelector} from '@ngrx/store';&#10;import {$REDUCER$State} from '../reducers';&#10;&#10;export const get$REDUCER$State = createFeatureSelector&lt;$REDUCER$State&gt;(&#10;  '$REDUCER_LOWER_CASE$'&#10;);&#10;&#10;export const get$REDUCER$IsLoaded = createSelector(&#10;  get$REDUCER$State,&#10;  (state: $REDUCER$State) =&gt; state.isLoaded&#10;);&#10;" description="redux feature selector" toReformat="false" toShortenFQNames="true">
-    <variable name="REDUCER" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="REDUCER_LOWER_CASE" expression="" defaultValue="decapitalize(REDUCER)" alwaysStopAt="false" />
-    <context>
-      <option name="JAVA_SCRIPT" value="true" />
-    </context>
-  </template>
-  <template name="ebf" value="export * from '$FILE$';&#10;" description="Export barrel" toReformat="false" toShortenFQNames="true">
+  <template name="ebf" value="export * from './$FILE$';" description="" toReformat="false" toShortenFQNames="true">
     <variable name="FILE" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="JAVA_SCRIPT" value="true" />
-    </context>
-  </template>
-  <template name="mn" value="$NAME$: number;&#10;" description="" toReformat="false" toShortenFQNames="true">
-    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
-    <context>
-      <option name="JAVA_SCRIPT" value="true" />
-    </context>
-  </template>
-  <template name="ma" value="$NAME$: Array&lt;$TYPE$&gt;;&#10;" description="" toReformat="false" toShortenFQNames="true">
-    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>

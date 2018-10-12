@@ -3,18 +3,20 @@
     <extensionMap>
       <mapping pattern="LeafletWMTSLayer" type="JavaScript" />
       <mapping pattern=".sequelizerc" type="JavaScript" />
-      <mapping pattern="duplicateFileFix" type="PLAIN_TEXT" />
-      <mapping pattern="objectToQueryParams" type="PLAIN_TEXT" />
-      <mapping pattern=".env.development" type="PLAIN_TEXT" />
-      <mapping pattern="state" type="PLAIN_TEXT" />
-      <mapping pattern=".env.test" type="PLAIN_TEXT" />
+      <mapping pattern="index" type="PLAIN_TEXT" />
       <mapping pattern="flatMap" type="PLAIN_TEXT" />
-      <mapping pattern=".env.example" type="PLAIN_TEXT" />
-      <mapping pattern="product-actions" type="PLAIN_TEXT" />
+      <mapping pattern=".env.development" type="PLAIN_TEXT" />
       <mapping pattern=".watchmanconfig" type="PLAIN_TEXT" />
+      <mapping pattern=".env.example" type="PLAIN_TEXT" />
+      <mapping pattern=".env.test" type="PLAIN_TEXT" />
+      <mapping pattern="Appointment" type="PLAIN_TEXT" />
+      <mapping pattern="Hexagon" type="PLAIN_TEXT" />
+      <mapping pattern="HexagonIds" type="PLAIN_TEXT" />
+      <mapping pattern="state" type="PLAIN_TEXT" />
+      <mapping pattern="duplicateFileFix" type="PLAIN_TEXT" />
       <mapping ext="rc" type="PLAIN_TEXT" />
-      <mapping ext="php" type="PLAIN_TEXT" />
       <mapping ext="example" type="PLAIN_TEXT" />
+      <mapping ext="php" type="PLAIN_TEXT" />
       <mapping ext="mijnik" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
