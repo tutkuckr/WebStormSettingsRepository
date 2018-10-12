@@ -1,5 +1,20 @@
 <keymap version="1" name="Default copy 1" parent="$default">
-  <action id="NewJavaScriptFile">
+  <action id="ChangesView.AddUnversioned" />
+  <action id="Diagram.DeselectAll" />
+  <action id="FindNext">
+    <keyboard-shortcut first-keystroke="f3" />
+    <keyboard-shortcut first-keystroke="ctrl l" />
+    <keyboard-shortcut first-keystroke="ctrl alt q" />
+  </action>
+  <action id="FindPrevious">
+    <keyboard-shortcut first-keystroke="shift f3" />
+    <keyboard-shortcut first-keystroke="shift ctrl l" />
+    <keyboard-shortcut first-keystroke="ctrl alt w" />
+  </action>
+  <action id="IntroduceActionsGroup">
+    <keyboard-shortcut first-keystroke="shift alt e" />
+  </action>
+  <action id="NewFile">
     <keyboard-shortcut first-keystroke="shift ctrl x" />
   </action>
   <action id="ReformatCode">
@@ -9,5 +24,9 @@
   <action id="RenameElement">
     <keyboard-shortcut first-keystroke="shift f6" />
     <keyboard-shortcut first-keystroke="shift ctrl q" />
+  </action>
+  <action id="SelectAllOccurrences">
+    <keyboard-shortcut first-keystroke="shift ctrl alt j" />
+    <keyboard-shortcut first-keystroke="ctrl alt a" />
   </action>
 </keymap>
