@@ -371,8 +371,8 @@
     </option>
     <option name="DEPRECATED_ATTRIBUTES">
       <value>
-        <option name="EFFECT_COLOR" value="c3c3c3" />
-        <option name="EFFECT_TYPE" value="3" />
+        <option name="EFFECT_COLOR" value="56c3" />
+        <option name="ERROR_STRIPE_COLOR" value="410100" />
       </value>
     </option>
     <option name="DIFF_CONFLICT">
