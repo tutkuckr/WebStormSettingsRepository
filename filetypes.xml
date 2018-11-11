@@ -11,6 +11,7 @@
       <mapping pattern="index" type="PLAIN_TEXT" />
       <mapping pattern=".env.development" type="PLAIN_TEXT" />
       <mapping pattern="state" type="PLAIN_TEXT" />
+      <mapping pattern="MobileListSidebarFilterFooter" type="PLAIN_TEXT" />
       <mapping pattern="filterIsAlreadySelected" type="PLAIN_TEXT" />
       <mapping pattern=".env.test" type="PLAIN_TEXT" />
       <mapping pattern="flatMap" type="PLAIN_TEXT" />
