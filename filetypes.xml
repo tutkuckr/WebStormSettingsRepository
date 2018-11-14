@@ -6,6 +6,7 @@
       <mapping pattern="Appointment" type="PLAIN_TEXT" />
       <mapping pattern="duplicateFileFix" type="PLAIN_TEXT" />
       <mapping pattern="store/index" type="PLAIN_TEXT" />
+      <mapping pattern="organisation" type="PLAIN_TEXT" />
       <mapping pattern="typeFilterIsActive" type="PLAIN_TEXT" />
       <mapping pattern="SortFilter" type="PLAIN_TEXT" />
       <mapping pattern="TypeFilter" type="PLAIN_TEXT" />

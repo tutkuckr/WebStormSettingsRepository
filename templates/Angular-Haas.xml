@@ -55,4 +55,11 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
+  <template name="qrda" value="import {Action} from '@ngrx/store';&#10;&#10;export const $action$ = '$action$';&#10;&#10;export class $action_creator$ implements Action {&#10;  readonly type = $action$;&#10;}&#10;&#10;export type $action_creator$Action = $action_creator$;&#10;" description="redux asynchronous action" toReformat="false" toShortenFQNames="true">
+    <variable name="action" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="action_creator" expression="" defaultValue="capitalize(camelCase(action))" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
