@@ -1,18 +1,18 @@
 <templateSet group="Angular-Haas">
-  <template name="rdaa" value="import {Action} from '@ngrx/store';&#10;&#10;export const $action$ = '$action$';&#10;export const $action$_FAIL = '$action$_FAIL';&#10;export const $action$_SUCCESS = '$action$_SUCCESS';&#10;&#10;export class $action_creator$ implements Action {&#10;  readonly type = $action$;&#10;}&#10;&#10;export class $action_creator$Fail implements Action {&#10;  readonly type = $action$_FAIL;&#10;  constructor(public payload: any) {}&#10;}&#10;&#10;export class $action_creator$Success implements Action {&#10;  readonly type = $action$_SUCCESS;&#10;  constructor(public payload: any) {}&#10;}&#10;&#10;export type $action_creator$Action = $action_creator$ | $action_creator$Fail | $action_creator$Success;&#10;" description="" toReformat="false" toShortenFQNames="true">
+  <template name="qrdaa" value="import {Action} from '@ngrx/store';&#10;&#10;export const $action$ = '$action$';&#10;export const $action$_FAIL = '$action$_FAIL';&#10;export const $action$_SUCCESS = '$action$_SUCCESS';&#10;&#10;export class $action_creator$ implements Action {&#10;  readonly type = $action$;&#10;}&#10;&#10;export class $action_creator$Fail implements Action {&#10;  readonly type = $action$_FAIL;&#10;  constructor(public payload: any) {}&#10;}&#10;&#10;export class $action_creator$Success implements Action {&#10;  readonly type = $action$_SUCCESS;&#10;  constructor(public payload: any) {}&#10;}&#10;&#10;export type $action_creator$Action = $action_creator$ | $action_creator$Fail | $action_creator$Success;&#10;" description="redux asynchronous action" toReformat="false" toShortenFQNames="true">
     <variable name="action" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="action_creator" expression="" defaultValue="capitalize(camelCase(action))" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="ebf" value="export * from './$FILE$';" description="" toReformat="false" toShortenFQNames="true">
+  <template name="qebf" value="export * from './$FILE$';" description="" toReformat="false" toShortenFQNames="true">
     <variable name="FILE" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="ei" value="export interface $NAME$ {&#10;  $FIELD$: $TYPE$;&#10;}&#10;" description="export interface" toReformat="false" toShortenFQNames="true">
+  <template name="qei" value="export interface $NAME$ {&#10;  $FIELD$: $TYPE$;&#10;}&#10;" description="export interface" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="FIELD" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="TYPE" expression="" defaultValue="string" alwaysStopAt="true" />
@@ -20,10 +20,39 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
-  <template name="ec" value="export const $NAME$ = '$NAME$';" description="export const" toReformat="false" toShortenFQNames="true">
+  <template name="qec" value="export const $NAME$ = '$NAME$';" description="export const" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="TypeScript" value="true" />
+    </context>
+  </template>
+  <template name="qrdr" value="import * as fromActions from '../actions';&#10;&#10;export interface $NAME$State {&#10;  $FIELDS$: $TYPE$;&#10;}&#10;&#10;const initialState: $NAME$State = {&#10;  $FIELDS$: $VALUE$&#10;};&#10;&#10;export function $NAME_UNDERSCORED$Reducer(&#10;  state = initialState,&#10;  action: fromActions.$ACTIONS$&#10;): $NAME$State {&#10;  switch (action.type) {&#10;    default:&#10;      return state;&#10;  }&#10;}&#10;" description="redux reducer" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FIELDS" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="TYPE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="NAME_UNDERSCORED" expression="" defaultValue="camelCase(NAME)" alwaysStopAt="true" />
+    <variable name="ACTIONS" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="qrde" value="import {Injectable} from '@angular/core';&#10;import {Actions, Effect, ofType} from '@ngrx/effects';&#10;import * as fromActions from '../actions';&#10;import {catchError, map, switchMap} from 'rxjs/operators';&#10;import {of} from 'rxjs';&#10;&#10;@Injectable()&#10;export class $EFFECT$Effect {&#10;  constructor(&#10;    private actions$: Actions,&#10;    private $CAMEL_SERVICE$: $SERVICE$,&#10;  ) {&#10;  }&#10;&#10;  @Effect()&#10;  $CAMEL_EFFECT$ = this.actions$.pipe(&#10;    ofType(fromActions.$ACTION$),&#10;    map((action: any) =&gt; action.payload),&#10;    switchMap((payload: any) =&gt; this.$CAMEL_SERVICE$.getData(payload).pipe(&#10;      map(response =&gt; new fromActions.$UPPER_CAMEL_ACTION$Success(response)),&#10;      catchError(error =&gt; of(new fromActions.$UPPER_CAMEL_ACTION$Fail(error)))&#10;    ))&#10;  );&#10;}&#10;" description="redux effect" toReformat="false" toShortenFQNames="true">
+    <variable name="EFFECT" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="CAMEL_SERVICE" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SERVICE" expression="" defaultValue="capitalize(CAMEL_SERVICE)" alwaysStopAt="false" />
+    <variable name="CAMEL_EFFECT" expression="" defaultValue="camelCase(EFFECT)" alwaysStopAt="false" />
+    <variable name="ACTION" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="UPPER_CAMEL_ACTION" expression="" defaultValue="capitalize(camelCase(ACTION))" alwaysStopAt="false" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="qser" value="import {Injectable} from '@angular/core';&#10;import {Observable, throwError} from 'rxjs';&#10;import {HttpClient} from '@angular/common/http';&#10;import {ConfigService} from '../../../config';&#10;import {catchError, last, map, switchMap} from 'rxjs/operators';&#10;&#10;@Injectable({&#10;  providedIn: 'root'&#10;})&#10;export class $NAME$Service {&#10;  constructor(private http: HttpClient, private configService: ConfigService) {&#10;  }&#10;&#10;  getData(): Observable&lt;any&gt; {&#10;    return this.configService.getConfig().pipe(&#10;      last(),&#10;      map(config =&gt; config.endpoints.$ENDPOINT$),&#10;      switchMap((url) =&gt; this.http.get(url).pipe(&#10;        catchError(error =&gt; throwError(error.json ? error.json() : error)),&#10;      ))&#10;    );&#10;  }&#10;}&#10;" description="service" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ENDPOINT" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
 </templateSet>

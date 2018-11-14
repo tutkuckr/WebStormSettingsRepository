@@ -5,10 +5,11 @@
       <mapping pattern=".sequelizerc" type="JavaScript" />
       <mapping pattern="Appointment" type="PLAIN_TEXT" />
       <mapping pattern="duplicateFileFix" type="PLAIN_TEXT" />
-      <mapping pattern="HexagonIds" type="PLAIN_TEXT" />
+      <mapping pattern="store/index" type="PLAIN_TEXT" />
       <mapping pattern="typeFilterIsActive" type="PLAIN_TEXT" />
       <mapping pattern="SortFilter" type="PLAIN_TEXT" />
       <mapping pattern="TypeFilter" type="PLAIN_TEXT" />
+      <mapping pattern="HexagonIds" type="PLAIN_TEXT" />
       <mapping pattern="Hexagon" type="PLAIN_TEXT" />
       <mapping pattern="index" type="PLAIN_TEXT" />
       <mapping pattern=".env.development" type="PLAIN_TEXT" />
