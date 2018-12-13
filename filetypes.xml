@@ -1,6 +1,7 @@
 <application>
   <component name="FileTypeManager" version="17">
     <extensionMap>
+      <mapping pattern="tests" type="PLAIN_TEXT" />
       <mapping pattern="calculate_subtotal_in_column" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
