@@ -6,6 +6,7 @@
       <mapping pattern="services/email" type="PLAIN_TEXT" />
       <mapping pattern="calculate_subtotal_in_column" type="PLAIN_TEXT" />
       <mapping pattern="userIsAuthenticated" type="PLAIN_TEXT" />
+      <mapping pattern="AuthenticationService" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
 </application>
