@@ -1,14 +1,16 @@
 <application>
   <component name="FileTypeManager" version="17">
     <extensionMap>
+      <mapping pattern="scripts/webpackDevServer" type="PLAIN_TEXT" />
       <mapping pattern="tests" type="PLAIN_TEXT" />
-      <mapping pattern="mail/index" type="PLAIN_TEXT" />
+      <mapping pattern="userIsAuthenticated" type="PLAIN_TEXT" />
       <mapping pattern="services/email" type="PLAIN_TEXT" />
       <mapping pattern="error_boundary" type="PLAIN_TEXT" />
       <mapping pattern="calculate_subtotal_in_column" type="PLAIN_TEXT" />
-      <mapping pattern="userIsAuthenticated" type="PLAIN_TEXT" />
+      <mapping pattern="mail/index" type="PLAIN_TEXT" />
       <mapping pattern="AuthenticationService" type="PLAIN_TEXT" />
       <mapping pattern="scroll/ScrollContext" type="PLAIN_TEXT" />
+      <mapping ext="config" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
 </application>
