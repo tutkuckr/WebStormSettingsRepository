@@ -16,15 +16,7 @@
       <CLASSES />
       <SOURCES />
     </library>
-    <library name="@types/flowjs" type="javaScript">
-      <CLASSES />
-      <SOURCES />
-    </library>
     <library name="@types/jest" type="javaScript">
-      <CLASSES />
-      <SOURCES />
-    </library>
-    <library name="@types/jsonwebtoken" type="javaScript">
       <CLASSES />
       <SOURCES />
     </library>
@@ -32,38 +24,20 @@
       <CLASSES />
       <SOURCES />
     </library>
-    <library name="@types/webdriverio" type="javaScript">
+    <library name="@types/react" type="javaScript">
       <CLASSES />
       <SOURCES />
     </library>
-    <library name="react" type="javaScript">
-      <CLASSES>
-        <root url="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_cdnjs.cloudflare.com_ajax_libs_react_15.3.1_react.js" />
-      </CLASSES>
+    <library name="@types/react-router-dom" type="javaScript">
+      <CLASSES />
       <SOURCES />
     </library>
-    <library name="react-dom" type="javaScript">
-      <CLASSES>
-        <root url="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_cdnjs.cloudflare.com_ajax_libs_react_15.3.1_react-dom.js" />
-      </CLASSES>
+    <library name="@types/react-router-redux" type="javaScript">
+      <CLASSES />
       <SOURCES />
     </library>
-    <library name="react-redux" type="javaScript">
-      <CLASSES>
-        <root url="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_cdnjs.cloudflare.com_ajax_libs_react-redux_4.4.5_react-redux.js" />
-      </CLASSES>
-      <SOURCES />
-    </library>
-    <library name="react-with-addons" type="javaScript">
-      <CLASSES>
-        <root url="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_cdnjs.cloudflare.com_ajax_libs_react_15.3.1_react-with-addons.js" />
-      </CLASSES>
-      <SOURCES />
-    </library>
-    <library name="redux" type="javaScript">
-      <CLASSES>
-        <root url="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_cdnjs.cloudflare.com_ajax_libs_redux_3.6.0_redux.js" />
-      </CLASSES>
+    <library name="@types/react-s-alert" type="javaScript">
+      <CLASSES />
       <SOURCES />
     </library>
   </component>
