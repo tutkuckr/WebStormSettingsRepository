@@ -141,7 +141,7 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="rc" value="import React from 'react'&#10;&#10;const $NAME$ = () =&gt; (&#10;  $END$&#10;)&#10;&#10;export default $NAME$" description="Create react component" toReformat="false" toShortenFQNames="true">
+  <template name="rc" value="import React from 'react'&#10;&#10;export const $NAME$ = () =&gt; {&#10;  return (&#10;    &lt;div&gt;&#10;      &lt;p&gt;$NAME$ works!$END$&lt;/p&gt;&#10;    &lt;/div&gt;&#10;  )&#10;}" description="Create react component" toReformat="false" toShortenFQNames="true">
     <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
@@ -203,6 +203,17 @@
     <variable name="ARGS" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ec" value="export const $END$" description="export constant" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ic" value="import {connect} from 'react-redux'" description="import redux connect" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="TypeScript" value="true" />
     </context>
   </template>
 </templateSet>

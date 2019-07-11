@@ -4,14 +4,18 @@
     <keyboard-shortcut first-keystroke="alt up" />
     <keyboard-shortcut first-keystroke="meta w" />
   </action>
+  <action id="ReformatCode">
+    <keyboard-shortcut first-keystroke="ctrl meta l" />
+  </action>
   <action id="RemoteHostView.Rename">
     <keyboard-shortcut first-keystroke="shift f6" />
   </action>
   <action id="RenameElement">
     <keyboard-shortcut first-keystroke="shift f6" />
-    <keyboard-shortcut first-keystroke="ctrl meta r" />
+    <keyboard-shortcut first-keystroke="shift alt q" />
   </action>
   <action id="RerunTests">
     <keyboard-shortcut first-keystroke="shift alt r" />
   </action>
+  <action id="WD.UploadCurrentRemoteFileAction" />
 </keymap>
