@@ -216,4 +216,12 @@
       <option name="TypeScript" value="true" />
     </context>
   </template>
+  <template name="rus" value=" const [$NAME$, set$FUN_NAME$] = React.useState($INITIAL$)&#10; " toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="FUN_NAME" expression="capitalize(NAME)" defaultValue="capitalize($NAME$)" alwaysStopAt="false" />
+    <variable name="INITIAL" expression="" defaultValue="undefined" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
 </templateSet>
