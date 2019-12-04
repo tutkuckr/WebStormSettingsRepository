@@ -1,28 +1,28 @@
 <scheme name="_@user_Material Oceanic" version="142" parent_scheme="Darcula">
-  <option name="FONT_SCALE" value="1.0" />
+  <option name="FONT_SCALE" value="1.25" />
   <metaInfo>
     <property name="created">2019-11-18T08:56:49</property>
     <property name="ide">WebStorm</property>
     <property name="ideVersion">2019.2.3.0.0</property>
-    <property name="modified">2019-11-27T13:32:29</property>
+    <property name="modified">2019-12-04T19:04:34</property>
     <property name="originalScheme">Material Oceanic</property>
   </metaInfo>
   <option name="LINE_SPACING" value="1.4" />
   <font>
     <option name="EDITOR_FONT_NAME" value="Menlo" />
-    <option name="EDITOR_FONT_SIZE" value="12" />
+    <option name="EDITOR_FONT_SIZE" value="15" />
   </font>
   <font>
     <option name="EDITOR_FONT_NAME" value="Fira Code" />
-    <option name="EDITOR_FONT_SIZE" value="12" />
+    <option name="EDITOR_FONT_SIZE" value="15" />
   </font>
   <console-font>
     <option name="EDITOR_FONT_NAME" value="Menlo" />
-    <option name="EDITOR_FONT_SIZE" value="12" />
+    <option name="EDITOR_FONT_SIZE" value="15" />
   </console-font>
   <console-font>
     <option name="EDITOR_FONT_NAME" value="Fira Code" />
-    <option name="EDITOR_FONT_SIZE" value="12" />
+    <option name="EDITOR_FONT_SIZE" value="15" />
   </console-font>
   <colors>
     <option name="ADDED_LINES_COLOR" value="c3e88d" />
@@ -39,7 +39,7 @@
     <option name="FILESTATUS_IDEA_SVN_FILESTATUS_EXTERNAL" value="72a038" />
     <option name="FILESTATUS_IDEA_SVN_FILESTATUS_OBSTRUCTED" value="727238" />
     <option name="FILESTATUS_IDEA_SVN_REPLACED" value="629755" />
-    <option name="FILESTATUS_IGNORE.PROJECT_VIEW.IGNORED" value="ab7967" />
+    <option name="FILESTATUS_IGNORE.PROJECT_VIEW.IGNORED" value="808080" />
     <option name="FILESTATUS_OBSOLETE" value="7c7c00" />
     <option name="FILESTATUS_RENAMED" value="7c7c" />
     <option name="FILESTATUS_SUPPRESSED" value="" />
@@ -1009,10 +1009,6 @@
         <option name="FOREGROUND" value="f78c6c" />
       </value>
     </option>
-    <option name="JS.GLOBAL_FUNCTION" baseAttributes="DEFAULT_FUNCTION_DECLARATION" />
-    <option name="JS.GLOBAL_VARIABLE" baseAttributes="DEFAULT_GLOBAL_VARIABLE" />
-    <option name="JS.INSTANCE_MEMBER_FUNCTION" baseAttributes="DEFAULT_INSTANCE_METHOD" />
-    <option name="JS.LOCAL_VARIABLE" baseAttributes="DEFAULT_LOCAL_VARIABLE" />
     <option name="JS.MODULE_KEYWORD">
       <value>
         <option name="FOREGROUND" value="89ddff" />
@@ -1024,7 +1020,6 @@
         <option name="FONT_TYPE" value="2" />
       </value>
     </option>
-    <option name="JS.REGEXP" baseAttributes="DEFAULT_STRING" />
     <option name="JS.THIS_SUPER">
       <value>
         <option name="FOREGROUND" value="ff4965" />
