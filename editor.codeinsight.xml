@@ -1,8 +1,0 @@
-<application>
-  <component name="CodeInsightSettings">
-    <option name="AUTO_POPUP_PARAMETER_INFO" value="false" />
-  </component>
-  <component name="DaemonCodeAnalyzerSettings">
-    <option name="SHOW_METHOD_SEPARATORS" value="true" />
-  </component>
-</application>
