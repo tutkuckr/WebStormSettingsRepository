@@ -37,4 +37,7 @@
     <keyboard-shortcut first-keystroke="ctrl comma" />
   </action>
   <action id="Uml.ShowDiff" />
+  <action id="ViewMainMenu">
+    <keyboard-shortcut first-keystroke="shift ctrl back_slash" />
+  </action>
 </keymap>
