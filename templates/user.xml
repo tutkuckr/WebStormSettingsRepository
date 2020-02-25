@@ -224,7 +224,7 @@
       <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
-  <template name="testsensor" value="import {Log} from '../src/utils'&#10;import {initializeRaspberryPi} from '../src/system/boards'&#10;import {System} from '../src/system'&#10;&#10;export const start = async () =&gt; {&#10;  await initializeRaspberryPi()&#10;&#10;  const system = new System([&#10;    $END$&#10;  ])&#10;&#10;  await system.initialize()&#10;&#10;  system.sensors.forEach(sensor =&gt; sensor.onSensorData.subscribe(sensorData =&gt; {&#10;    Log.test(sensorData)&#10;  }))&#10;}" toReformat="false" toShortenFQNames="true">
+  <template name="testsensor" value="import {Log} from '../src/utils'&#10;import {initializeRaspberryPi} from '../src/system/boards'&#10;import {System} from '../src/system'&#10;&#10;export const start = async () =&gt; {&#10;  await initializeRaspberryPi()&#10;&#10;  const system = new System([&#10;    $END$&#10;  ])&#10;&#10;  await system.initialize()&#10;&#10;  system.sensors.forEach(sensor =&gt; sensor.onSensorData.subscribe(sensorData =&gt; {&#10;    Log.test(sensorData)&#10;  }))&#10;}" description="" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
